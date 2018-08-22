@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aluno.myapplication.Main2Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor do Alcool"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="43dp"
+        />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="79dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadoura"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="43dp"
+            />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valor1"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="43dp"
+            />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="79dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valor2"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="43dp"
+            />
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="79dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:background="#FF0000"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10px"
+                android:layout_marginLeft="10px"
+                android:layout_height="wrap_content"
+                android:text="+"
+            />
+            <Button
+                android:id="@+id/button2"
+                android:background="#006400"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10px"
+                android:layout_height="wrap_content"
+                android:text="-"
+            />
+            <Button
+                android:id="@+id/button3"
+                android:background="#0000FF"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10px"
+                android:layout_height="wrap_content"
+                android:text="/"
+             />
+            <Button
+                android:id="@+id/button4"
+                android:background="#FFFF00"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10px"
+                android:layout_height="wrap_content"
+                android:text="*"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
