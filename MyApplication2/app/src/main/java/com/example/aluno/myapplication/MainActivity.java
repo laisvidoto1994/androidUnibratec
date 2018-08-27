@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity
 
         inicial();
 
+        /*
+            Visualizar consulta na propia tela
+        */
         mButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity
             {
                 double t1 = Double.parseDouble( mEditText1.getText().toString() );
                 double t2 = Double.parseDouble( mEditText2.getText().toString() );
+
                 double result = t1 * 0.7;
 
                 if( t2 <= result )
@@ -52,6 +56,9 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+         /*
+            Visualizar consulta em outra tela
+        */
         mButton2.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -59,7 +66,10 @@ public class MainActivity extends AppCompatActivity
             {
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                 intent.putExtra("chave1","nova Activity" );
+
                 //startActivity(intent);
+
+                //startActivityForResult->receber um resultado da atividade quando ela finalizar
                 startActivityForResult(intent, 01);
             }
         });
