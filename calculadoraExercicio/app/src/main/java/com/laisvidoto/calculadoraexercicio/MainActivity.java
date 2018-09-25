@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText editText;
     private Button buttonC;
@@ -54,6 +54,54 @@ public class MainActivity extends AppCompatActivity {
         button1  = (Button) findViewById(R.id.button1);
         button0  = (Button) findViewById(R.id.button0);
     }
+     private void setLister()
+    {
+        buttonC.setOnClickListener(MainActivity.this);
+        buttonMaisMenos.setOnClickListener(MainActivity.this);
+        buttonPorcentagem.setOnClickListener(MainActivity.this);
+        buttonDivisao.setOnClickListener(MainActivity.this);
+        buttonMultiplicacao.setOnClickListener(MainActivity.this);
+        buttonMenos.setOnClickListener(MainActivity.this);
+        buttonMais.setOnClickListener(MainActivity.this);
+        buttonIgual.setOnClickListener(MainActivity.this);
+        buttonVirgula.setOnClickListener(MainActivity.this);
+
+        button9.setOnClickListener(MainActivity.this);
+        button8.setOnClickListener(MainActivity.this);
+        button7.setOnClickListener(MainActivity.this);
+        button6.setOnClickListener(MainActivity.this);
+        button5.setOnClickListener(MainActivity.this);
+        button4.setOnClickListener(MainActivity.this);
+        button3.setOnClickListener(MainActivity.this);
+        button2.setOnClickListener(MainActivity.this);
+        button1.setOnClickListener(MainActivity.this);
+        button0.setOnClickListener(MainActivity.this);         
+    }
+     @Override
+    public void onClick(View view) {
+        
+        double valor1 = Double.parseDouble( mEditText2.getText().toString() );
+        double valor2 = Double.parseDouble( mEditText3.getText().toString() );
+
+        double result = 0;
+        String operador = "";
+
+        switch ( view.getId() )
+        {
+            case R.id.buttonMais:
+                result = Calculadora.adicao(valor1, valor2);
+                operador = "adicao";
+            case R.id.buttonMenos:
+                result = Calculadora.subtracao(valor1, valor2);
+                operador = "subtracao";
+            case R.id.buttonDivisao:
+                result = Calculadora.divisao(valor1, valor2);
+                operador = "divisao";
+            case R.id.buttonMultiplicacao:
+                result = Calculadora.multiplicacao(valor1, valor2);
+                operador = "multiplicacao";
+        }
+    }
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,17 +109,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         
          inicial();
+         setLister();
 
-        /*
-            Botão C
-        */
-        buttonC.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-               //realiza á operação
-            }
-        });
+         
     }
 }
