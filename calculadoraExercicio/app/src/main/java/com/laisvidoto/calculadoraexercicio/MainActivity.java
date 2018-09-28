@@ -80,29 +80,82 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      @Override
     public void onClick(View view) {
         
-        double valor1 = Double.parseDouble( mEditText2.getText().toString() );
-        double valor2 = Double.parseDouble( mEditText3.getText().toString() );
+         /* Numeros */
+            case R.id.button0:
+                tecladoNumerico(0);
+                break;
+            case R.id.button1:
+                tecladoNumerico(1);
+                break;
+            case R.id.button2:
+                tecladoNumerico(2);
+                break;
+            case R.id.button3:
+                tecladoNumerico(3);
+                break;
+            case R.id.button4:
+                tecladoNumerico(4);
+                break;
+            case R.id.button5:
+                tecladoNumerico(5);
+                break;
+            case R.id.button6:
+                tecladoNumerico(6);
+                break;
+            case R.id.button7:
+                tecladoNumerico(7);
+                break;
+            case R.id.button8:
+                tecladoNumerico(8);
+                break;
+            case R.id.button9:
+                tecladoNumerico(9);
+                break;
 
-        double result = 0;
-        String operador = "";
+            /* Operadores */
 
-        switch ( view.getId() )
-        {
-            case R.id.buttonMais:
-                result = Calculadora.adicao(valor1, valor2);
-                operador = "adicao";
-            case R.id.buttonMenos:
-                result = Calculadora.subtracao(valor1, valor2);
-                operador = "subtracao";
+            case R.id.buttonC:
+                limpar();
+                break;
+            case R.id.buttonMaisMenos:
+                mudarOperadorMaisOuMenos();
+                break;
+            case R.id.buttonPorcentagem:
+                porcentagem();
+                break;
             case R.id.buttonDivisao:
-                result = Calculadora.divisao(valor1, valor2);
-                operador = "divisao";
+                divisao();
+                break;
             case R.id.buttonMultiplicacao:
-                result = Calculadora.multiplicacao(valor1, valor2);
-                operador = "multiplicacao";
+                multiplicacao();
+                break;
+            case R.id.buttonMenos:
+                menos();
+                break;
+            case R.id.buttonMais:
+                mais();
+                break;
+            case R.id.buttonIgual:
+                igual();
+                break;
+            case R.id.buttonVirgula:
+                virgula();
+                break;
+
         }
     }
     
+
+
+    private void limpar() {
+    }
+
+    /* Função que recebe qual o numero digitado */
+    private void tecladoNumerico(int i) {
+
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
