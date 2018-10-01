@@ -6,7 +6,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener
+{
+    
+    private double operador1;// realiza operação
+    private double operador2;// realiza operação
+
+    private String operadores;// guarda operador
 
     private EditText editText;
     private Button buttonC;
@@ -30,7 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button1;
     private Button button0;
     
-      public void inicial()
+
+    public void inicial()
     {
         editText = (EditText) findViewById(R.id.editText);
         buttonC  = (Button) findViewById(R.id.buttonC);
@@ -54,7 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button1  = (Button) findViewById(R.id.button1);
         button0  = (Button) findViewById(R.id.button0);
     }
-     private void setLister()
+
+
+    private void setLister()
     {
         buttonC.setOnClickListener(MainActivity.this);
         buttonMaisMenos.setOnClickListener(MainActivity.this);
@@ -77,93 +86,178 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button1.setOnClickListener(MainActivity.this);
         button0.setOnClickListener(MainActivity.this);         
     }
-     @Override
-    public void onClick(View view) {
+
+
+   @Override
+    public void onClick(View v)
+     {
+         switch ( v.getId() )
+         {
         
-         /* Numeros */
-            case R.id.button0:
-                tecladoNumerico(0);
-                break;
-            case R.id.button1:
-                tecladoNumerico(1);
-                break;
-            case R.id.button2:
-                tecladoNumerico(2);
-                break;
-            case R.id.button3:
-                tecladoNumerico(3);
-                break;
-            case R.id.button4:
-                tecladoNumerico(4);
-                break;
-            case R.id.button5:
-                tecladoNumerico(5);
-                break;
-            case R.id.button6:
-                tecladoNumerico(6);
-                break;
-            case R.id.button7:
-                tecladoNumerico(7);
-                break;
-            case R.id.button8:
-                tecladoNumerico(8);
-                break;
-            case R.id.button9:
-                tecladoNumerico(9);
-                break;
+            /* Numeros */
+             case R.id.button0:
+                 tecladoNumerico(0);
+                 break;
+             case R.id.button1:
+                 tecladoNumerico(1);
+                 break;
+             case R.id.button2:
+                 tecladoNumerico(2);
+                 break;
+             case R.id.button3:
+                 tecladoNumerico(3);
+                 break;
+             case R.id.button4:
+                 tecladoNumerico(4);
+                 break;
+             case R.id.button5:
+                 tecladoNumerico(5);
+                 break;
+             case R.id.button6:
+                 tecladoNumerico(6);
+                 break;
+             case R.id.button7:
+                 tecladoNumerico(7);
+                 break;
+             case R.id.button8:
+                 tecladoNumerico(8);
+                 break;
+             case R.id.button9:
+                 tecladoNumerico(9);
+                 break;
 
             /* Operadores */
+             case R.id.buttonC:
+                 limpar();
+                 break;
+             case R.id.buttonMaisMenos:
+                 mudarOperadorMaisOuMenos();
+                 break;
+             case R.id.buttonPorcentagem:
+                 porcentagem();
+                 break;
+             case R.id.buttonVirgula:
+                 virgula(".");
+                 break;
 
-            case R.id.buttonC:
-                limpar();
-                break;
-            case R.id.buttonMaisMenos:
-                mudarOperadorMaisOuMenos();
-                break;
-            case R.id.buttonPorcentagem:
-                porcentagem();
-                break;
-            case R.id.buttonDivisao:
-                divisao();
-                break;
-            case R.id.buttonMultiplicacao:
-                multiplicacao();
-                break;
-            case R.id.buttonMenos:
-                menos();
-                break;
-            case R.id.buttonMais:
-                mais();
-                break;
-            case R.id.buttonIgual:
-                igual();
-                break;
-            case R.id.buttonVirgula:
-                virgula();
-                break;
-
-        }
+             case R.id.buttonDivisao:
+                 operacao("/");
+                 break;
+             case R.id.buttonMultiplicacao:
+                 operacao("*");
+                 break;
+             case R.id.buttonMenos:
+                 operacao("-");
+                 break;
+             case R.id.buttonMais:
+                 operacao("+");
+                 break;
+             case R.id.buttonIgual:
+                 igual();
+                 break;
+         }
     }
-    
 
+    /*
+    *   Função para saber qual operador foi clicado
+    */
+    private void operacao( String operacao)
+    {
+          this.operadores = operacao;
 
-    private void limpar() {
+          if(operacao == "+"){
+              operador1 = Double.parseDouble( editText.getText().toString().trim() );
+          }
+          else if(operacao == "-"){
+              operador1 = Double.parseDouble( editText.getText().toString().trim() );
+          }
+          else if(operacao == "*"){
+              operador1 = Double.parseDouble( editText.getText().toString().trim() );
+          }
+          else if(operacao == "/"){
+              operador1 = Double.parseDouble( editText.getText().toString().trim() );
+          }
     }
+
+
+    private void porcentagem()
+    {
+
+    }
+
+
 
     /* Função que recebe qual o numero digitado */
-    private void tecladoNumerico(int i) {
+    private void tecladoNumerico(int numeroClicado)
+    {
+        if(editText.getText().toString().trim().equals("0.0"))
+        {
+            editText.setText( editText.getText().toString() + String.valueOf(numeroClicado) );
+        }
+        else
+        {
+            editText.setText( editText.getText().toString() + String.valueOf(numeroClicado) );
+        }
+    }
 
+    private void virgula(String ponto)
+    {
+        editText.setText(editText.getText().toString() + ponto);
+    }
+
+    private void mudarOperadorMaisOuMenos()
+    {
+
+    }
+
+    private void limpar()
+    {
+
+    }
+
+    private void igual( )
+    {
+        if( !editText.getText().toString().trim().equals("") )
+        {
+            if(operadores  == "+")
+            {
+                operador2 = operador1 + Double.parseDouble( editText.getText().toString().trim() );
+            }
+            else if(operadores  == "*")
+            {
+                operador2 = operador1 + Double.parseDouble( editText.getText().toString().trim() );
+            }
+            else if(operadores  == "-")
+            {
+                operador2 = operador1 + Double.parseDouble( editText.getText().toString().trim() );
+            }
+            else if(operadores  == "/")
+            {
+                if( operador1 == 0 )
+                {
+                    operador2 = 0;
+                }
+                else
+                {
+                    operador2 = operador1 + Double.parseDouble( editText.getText().toString().trim() );
+                }
+            }
+            else
+            {
+                operador2 = 0;
+            }
+            editText.setText( String.valueOf(operador2) );
+        }
     }
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
          inicial();
          setLister();
-
-         
     }
 }
