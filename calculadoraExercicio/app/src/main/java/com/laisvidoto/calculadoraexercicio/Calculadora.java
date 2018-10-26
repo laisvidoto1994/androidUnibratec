@@ -25,6 +25,11 @@ public class Calculadora {
     {
         return n1 * n2;
     }
+
+    public static double percentual(double n1)
+    {
+        return n1 / 100;
+    }
 }
 
 
