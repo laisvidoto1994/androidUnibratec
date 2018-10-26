@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="go_new_activity">Ir para nova Activity</string>
+    <string name="second_activity">Nova Activity</string>
+    <string name="first_activity">Primeira Activity</string>
+</resources>

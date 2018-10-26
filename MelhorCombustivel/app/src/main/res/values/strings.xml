@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MelhorCombustivel</string>
+    <string name="alcool_str">Álcool</string>
+    <string name="gasolina_str">Gasolina</string>
+    <string name="calcular">Calcular</string>
+    <string name="incorrect_values">Valor incorreto</string>
+    <string name="choice_alcool">Escolha álcool</string>
+    <string name="choice_gasolina">Escolha Gasolina</string>
+</resources>

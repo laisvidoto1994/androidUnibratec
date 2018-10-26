@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConceitosBasicos</string>
+    <string name="btn_ok">OK</string>
+    <string name="clicou_no_botao">Clicou no botão</string>
+</resources>
