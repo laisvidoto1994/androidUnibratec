@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_cadastro_aluno"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="25dp"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context="com.unibratec.laisvidoto.application_exemplo_sqlite.CadastroAluno">
+
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/et_nome"
+                  android:hint="Nome"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+         />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/et_email"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/et_telefone"
+            android:hint="Telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button android:id="@+id/bt_salvar"
+        android:text="Salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

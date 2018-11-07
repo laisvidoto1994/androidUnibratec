@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unibratec.laisvidoto.application_teste_telas">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity_Cadastro_Fornecedor" />
+        <activity android:name=".Activity_Principal_Fornecedor" />
+        <activity android:name=".Activity_Home_Fornecedor" />
+        <activity android:name=".Activity_configuracao_fornecedor" />
+        <activity android:name=".Activity_servico_fornecedor" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>

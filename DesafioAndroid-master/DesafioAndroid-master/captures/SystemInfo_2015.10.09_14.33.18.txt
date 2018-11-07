@@ -1,0 +1,36 @@
+Applications Memory Usage (kB):
+Uptime: 467773912 Realtime: 2307355709
+
+** MEMINFO in pid 17571 [com.example.diego.desafioandroid] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     5922     5876        0     4144    11657    11657     8822
+  Dalvik Heap   190779   190708        0    25204   248185   226306    21879
+ Dalvik Other     1018     1016        0        0                           
+        Stack      236      236        0        0                           
+    Other dev    73594    72688        4        0                           
+     .so mmap     1980      340     1172     1712                           
+    .apk mmap      122        0       12        0                           
+    .ttf mmap       10        0        8        0                           
+    .dex mmap      984        0      984        0                           
+    code mmap     1332        0      340        0                           
+   image mmap     1475      888      144      512                           
+   Other mmap       63        4       52        0                           
+     Graphics    66784    66784        0        0                           
+           GL     4044     4044        0        0                           
+      Unknown        0        0        0       56                           
+        TOTAL   348343   342584     2716    31628   259842   237963    30701
+ 
+ Objects
+               Views:      151         ViewRootImpl:        1
+         AppContexts:        3           Activities:        1
+              Assets:        4        AssetManagers:        4
+       Local Binders:        8        Proxy Binders:       14
+    Death Recipients:        0
+     OpenSSL Sockets:        5
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

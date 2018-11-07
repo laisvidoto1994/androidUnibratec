@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/very_dark_gray_color"
+    android:orientation="vertical">
+
+    <com.example.diego.desafioandroid.CustomScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </com.example.diego.desafioandroid.CustomScrollView>
+
+
+    <TextView
+        android:id="@+id/pageText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Página: 1"
+        android:textSize="16dp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

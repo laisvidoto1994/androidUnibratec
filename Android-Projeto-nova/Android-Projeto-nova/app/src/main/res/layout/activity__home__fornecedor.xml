@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity__home__fornecedor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.unibratec.laisvidoto.application_teste_telas.Activity_Home_Fornecedor"
+    android:weightSum="1">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageView"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="1"
+            android:layout_weight="0.24">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_usuario"
+                    android:hint="@string/usuario"
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_senha"
+                        android:hint="@string/senha"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                    />
+                </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+                android:text="@string/proceguir"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:id="@+id/button2"
+                android:layout_weight="0.03"
+        />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cadastrese"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="italic"
+                    android:onClick="callFunction"
+                />
+            </LinearLayout>
+    </LinearLayout>

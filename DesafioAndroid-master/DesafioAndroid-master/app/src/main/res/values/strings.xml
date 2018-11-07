@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Desafio Android</string>
+
+    <string name="action_settings">Settings</string>
+
+    <color name="background_color">#ffffff</color>
+    <color name="very_dark_gray_color">#323232</color>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/activity__linear_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.unibratec.laisvidoto.application_layout.Activity_LinearLayout">
+
+    <!-- linha 1 -->
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+        <Button android:text="L1, C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+        <Button android:text="L1, C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+        <Button android:text="L1, C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--linha 2 -->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content" >
+
+        <Button android:text="L2, C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+            />
+        <Button android:text="L2, C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+            />
+        <Button android:text="L2, C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <!-- linha 3 -->
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+        <Button android:text="L3, C1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+        <Button android:text="L3, C2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+        <Button android:text="L3, C3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

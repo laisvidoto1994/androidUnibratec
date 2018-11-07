@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ApplicationTabLayoutViewPagerFragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="text_fragment_A" > Fragment A da Tab A </string>
+    <string name="text_fragment_B" > Fragment B da Tab B </string>
+
+    <string-array name="titles_tab">
+        <item> tab1 </item>
+        <item> tab2 </item>
+        <item> tab3 </item>
+    </string-array>
+
+</resources>

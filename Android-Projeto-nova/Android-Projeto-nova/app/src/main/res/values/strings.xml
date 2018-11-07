@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">TáFeito</string>
+
+    <!-- Activity Home Fornecedor -->
+    <string name="usuario"     >Usuario</string>
+    <string name="senha"       >Senha</string>
+    <string name="cadastrese"  >não é cadastrado? Clique aqui!</string>
+    <string name="proceguir"   >Logar</string>
+
+    <!--Activity Cadastro Fornecedor -->
+    <string name="cadastro" >Cadastro</string>
+    <string name="nome"     >Nome: </string>
+    <string name="endereco" >Endereço: </string>
+    <string name="cnpj"     >Cnpj: </string>
+    <string name="cadastrar">Cadastrar</string>
+
+    <!--Activity Principal Fornecedor -->
+    <string name="configuracao" >Configuração</string>
+    <string name="servico"      >Serviço</string>
+    <string name="agendamento"  >Agendamento</string>
+    <string name="oferta"       >Oferta</string>
+
+    <!--Activity Configuração Fornecedor -->
+
+    <string name="atualizar">Atualizar</string>
+
+
+    <!--Activity Serviço Fornecedor -->
+    <string name="descricao">Descrição: </string>
+    <string name="data">Data: </string>
+    <string name="hora">Hora: </string>
+    <string name="categoria">Categoria: </string>
+    <string name="spinner_title">Selecione Categoria</string>
+    <string name="adicionar">ADD</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity__scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.unibratec.laisvidoto.application_layout.Activity_ScrollView">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+
+        <EditText android:text=" INICIO Tela Inicial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/activity_main"/>
+
+        <EditText android:text=" FIM Tela Inicial"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+            />
+        <EditText android:text=" "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <EditText android:text=" INICIO Tela Grid Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/activity__grid_layout" />
+
+        <EditText android:text=" FIM Tela Grid Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</ScrollView>

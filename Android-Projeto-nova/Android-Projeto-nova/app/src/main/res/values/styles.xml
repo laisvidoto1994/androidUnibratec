@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--   -->
+        <item name="colorPrimary">@color/cardview_dark_background</item>
+        <!--   -->
+        <item name="colorPrimaryDark">#000</item>
+        <!--   -->
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

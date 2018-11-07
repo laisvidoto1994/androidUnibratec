@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unibratec.laisvidoto.application_layout">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_Frame" />
+        <activity android:name=".Activity_GridLayout" />
+        <activity android:name=".Activity_LinearLayout" />
+        <activity android:name=".Activity_ScrollView" />
+        <activity android:name=".Activity_TableLayout" />
+        <activity android:name=".Activity_Exemplo_LinearLayout" />
+        <activity android:name=".Activity_Exemplo_RelativeLayout" />
+        <activity android:name=".Activity_exemplo_TableLayout" />
+        <activity android:name=".Activity_exemplo2_RelativeLayout" />
+        <activity android:name=".Activity_exemplo_CardView" />
+        <activity android:name=".Activity_exemplo_ScrollView"></activity>
+    </application>
+
+</manifest>

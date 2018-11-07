@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\pre-dexed\release\classes-92ebeaf4ceb57df8322609f9807a675c3daf841a.jar" />
+    </item>
+    <item
+        jar="D:\Programas\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\pre-dexed\release\support-annotations-23.0.1-b0cf73ce2aa5d5eb883663861b196f72fc828cba.jar" />
+    </item>
+    <item
+        jar="C:\Users\Diego\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3\5fc52c41ef0239d1093a1eb7c3697036183677ce\gson-2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\pre-dexed\release\gson-2.3-81ad801881746e09557b9e7b3fb2a1aee4e7ac94.jar" />
+    </item>
+    <item
+        jar="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\pre-dexed\release\internal_impl-23.0.1-e2f67788da92b8d37253763cfc8a1d9397465b04.jar" />
+    </item>
+    <item
+        jar="C:\Users\Diego\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.19\a8f23f65fc1e522ee4a1a697ee569901a46741fa\library-1.0.19.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\pre-dexed\release\library-1.0.19-4347aa856cf2e09bab1c097df5f77e11bfb965fb.jar" />
+    </item>
+    <item
+        jar="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\pre-dexed\release\classes-8d264e1b9fd430f29c76379597812f8cfd62cbaf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Diego\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.6.1\86b122e640af09b0723e1fa44083c354ba6d9089\glide-3.6.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="D:\Documentos\Projetos\Android\DesafioAndroid\app\build\intermediates\pre-dexed\release\glide-3.6.1-8e41bb6f909ce3fe3ca5ed5d85d2e66a3b0186f7.jar" />
+    </item>
+
+</items>
