@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- nome do aplicativo-->
+    <string name="app_name">Lista de Alunos</string>
+
+    <!-- nomes das caixas de texto-->
+    <string name="str_name">Name</string>
+    <string name="str_telefone" >Telefone</string>
+    <string name="str_endereco">Endereco</string>
+    <string name="str_foto">Foto</string>
+    <string name="str_site_pessoal">Site Pessoal</string>
+    <string name="str_nota">Nota</string>
+
+    <!-- nome do botão-->
+    <string name="btn_salvar">Salvar</string>
+
+</resources>

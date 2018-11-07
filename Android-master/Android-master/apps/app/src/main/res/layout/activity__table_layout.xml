@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity__table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:stretchColumns="1,2"
+            tools:context="com.unibratec.laisvidoto.application_layout.Activity_TableLayout">
+
+    <TableRow>
+
+        <TextView android:text="Nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+        <EditText android:id="@+id/edtNome"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="Avisar por: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+        <CheckBox android:layout_width="wrap_content"
+                android:layout_heitght="wrap_content"
+                android:text="Telefone"
+                android:checked="true"
+            />
+        <CheckBox android:layout_width="wrap_content"
+                android:layout_heitght="wrap_content"
+                android:text="Email"
+                android:checked="false"
+            />
+
+    </TableRow>
+
+    <TableRow>
+
+        <EditText android:text=" "
+            android:layout_width="match_parent"
+            android:layout_heitght="match_parent"
+            />
+
+        <Button android:text="Atualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         />
+
+    </TableRow>
+
+</TableLayout>
